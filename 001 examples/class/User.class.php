@@ -28,11 +28,11 @@ class User{
 
 $user1 = new User("Peter", "Parker", "1");
 echo $user1->full_name();
-echo "<br><br>";
+echo "<br>";
 
 $user2 = clone $user1;
 $user2->first_name = "Bruce";
 $user2->last_name = "Wayne";
 
 echo $user1->full_name();
-echo "<br><br>";
+echo "<br>";
