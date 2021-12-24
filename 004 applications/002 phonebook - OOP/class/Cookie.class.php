@@ -70,9 +70,3 @@ class Cookie{
         return false;
     }
 }
-
-/**
- * NOTES
- * @status FINISHED
- * @note PLEASE DON'T INSTANTIATE CLASS; CALL METHOD USING STATIC CALLS!
- */

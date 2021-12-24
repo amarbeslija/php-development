@@ -281,28 +281,3 @@ class Database
         return false;
     }
 }
-
-/* Class Testing 
-include "../configuration.php";
-
-$database = new Database();
-var_dump($database->like("user", ["id", "fullname"], ["email"], ["web@amarbeslija.com"])->output());
-
-#$results = $database->select("user", "*")->output();
-#for($i = 0; $i < count($results); $i++){
-#    var_dump($results[$i]);
-#    echo "<br><br>";
-#}
-#echo $database->select("user", ["fullname", "username", "status"]);
-#echo $database->select("user", ["fullname", "username", "status"], "email", "amarbeslija@gmail.com");
-#echo $database->select("user", ["fullname", "username", "status"], "email", "amarbeslija@gmail.com", "1");
-#echo $database->select("user", ["fullname", "username", "status"], "", "", "1");
-#echo "<br>";
-#echo $database->delete("user");
-#echo $database->delete("user", "id", "3");
-#echo "<br>";
-#echo $database->insert("user", ['id', 'first_name', 'lastname'], ['1', "amar", "bešlija"]);
-#echo "<br>";
-#echo $database->update("user", ["id", "fullname", "username"], ["1", "Johntra", "volta"], "id", "1");
-#echo $database->empty("user");
-*/

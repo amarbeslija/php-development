@@ -65,12 +65,3 @@ class Validation{
         }
     }
 }
-
-/* Class Testing
-
-var_dump(Validation::password("mind134Aasd5!"));
-var_dump(Validation::fullname("Ama ar"));
-var_dump(Validation::email("amarbeslija@lab387.com"));
-
-*/
-

@@ -16,8 +16,8 @@ class Security
     {
         $output = false;
         $encrypt_method = "AES-256-CBC";
-        $secret_key = 'Labisthebest1317';
-        $secret_iv = 'WelcomeToTheLab1';
+        $secret_key = 'This_is_my_secret_key!';
+        $secret_iv = 'Welcome_to_the_programming!';
         $key = hash('sha256', $secret_key);
         $iv = substr(hash('sha256', $secret_iv), 0, 16);
 
@@ -100,18 +100,3 @@ class Security
         return $output;
     }
 }
-
-/* Class Testing 
-require "../configuration.php";
-$enc = Security::encrypt_decrypt("amarbeslija");
-echo $enc;
-echo "<br>";
-echo Security::encrypt_decrypt($enc, "decrypt");
-echo "<br>";
-echo Security::hash("amarbeslija");
-echo "<br>";
-$hashed_password = Security::hash_password("amarbeslija");
-echo $hashed_password;
-echo "<br>";
-echo Security::verify_password("amarbeslija", $hashed_password);
-*/

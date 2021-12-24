@@ -37,17 +37,3 @@ class Errors{
         return false;
     }
 }
-
-/* CLASS TESTING */
-
-#require "../configuration.php";
-#Errors::show("1");
-
-/**
- *
- *  NOTES
- * @status FINISHED FOR NOW
- * @add_later ADD LOGGING TO ERRORS
- * @note CLASS SHOULD BE CALLED ERROR BUT IT CLASHES WITH INCLUDED PHP CLASS, SO WE CALL IT ERRORS NOW.
- * 
- */
