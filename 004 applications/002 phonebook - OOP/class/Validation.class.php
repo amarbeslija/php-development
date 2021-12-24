@@ -20,37 +20,6 @@ class Validation{
 
     /**
      * 
-     * Static method for validating password of the user
-     * @param string $password We expect user's password with minimal of the 8 characters, one upper case letter, one lower case letter, number and special character.
-     * @param string $length Optional parameter where we can increase the required length of the password
-     * @return bool It returns true if valid, false otherwise.
-     * 
-     */
-    public static function password($password, $length = 8){
-        if(preg_match('/^\S*(?=\S{' . $length .',})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$/', $password)){
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
-     * 
-     * Method for validating user email using html_entities function inside the PHP.
-     * @param string $email We expect user's email in standard format.
-     * @return bool It returns true if valid, false otherwise.
-     * 
-     */
-    public static function email($email){
-        if (filter_var(htmlentities($email, ENT_QUOTES), FILTER_VALIDATE_EMAIL)){
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
-     * 
      * Method for validating user phone. Checking if number is in number format.
      * @param string $phone We expect user's phone in standard format.
      * @return bool It returns true if valid, false otherwise.

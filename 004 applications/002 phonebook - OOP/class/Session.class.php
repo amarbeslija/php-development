@@ -90,11 +90,3 @@ class Session
         return false;
     }
 }
-
-/**
- * 
- * NOTES
- * @status FINISHED
- * @note ALL METHODS EXCEPT get_value() NEEDS INSTANCE. get_value() IS STATIC METHOD AND IT IS USED WHEN NEED TO GET VALUE FROM THE SESSION AND DON'T WANT TO CREATE A NEW SESSION.
- * 
- */
