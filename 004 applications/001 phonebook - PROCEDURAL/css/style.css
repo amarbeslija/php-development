@@ -1,0 +1,43 @@
+body{
+	background-image: url("../img/backgroundimg.png");
+}
+
+#wrap{
+    width: 300px;
+	margin: auto;
+}
+
+#search{
+	background-color: rgba(207, 207 ,209 , 0.5);
+	padding:10px;
+	margin-bottom:30px;
+	border-radius: 15px;
+	border: 1px solid #696969;
+}
+
+
+#search img{
+	max-width: 270px;
+}
+
+#message{
+	background-color: rgba(245, 207, 209, 0.5);
+	border-radius: 15px 15px 15px 15px;
+	text-align: center;
+	border: 1px solid #696969;
+
+}
+
+#result{
+	padding:10px;
+	background-color: rgba(207, 207, 209, 0.5);
+	margin-bottom: 2px;
+	border-radius: 15px 15px 15px 15px;
+	border: 1px solid #696969;
+
+}
+
+#result img{
+	float: right;
+	max-height: 40px;
+}

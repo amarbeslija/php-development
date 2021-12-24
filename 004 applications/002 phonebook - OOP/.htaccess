@@ -1,0 +1,6 @@
+# This part will load page on demand through GET variables
+RewriteEngine on
+RewriteRule ^([a-zA-Z_-]+)$ index.php?page=$1 [NC,L,QSA]
+
+
+
