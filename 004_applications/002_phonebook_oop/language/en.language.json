@@ -1,0 +1,38 @@
+{
+        "app": {
+                "go-back": "Go back",
+                "add": "Add new User",
+                "edit": "Edit",
+                "delete": "Delete",
+                "search": "Search Users",
+                "reset-search": "Reset Search",
+                "adding-success": "User added succesfully!",
+                "editing-success": "User edited succesfully!",
+                "deleting-success": "User deleted succesfully!",
+                "coming-soon": "Coming soon!",
+                "no-users": "No Users...",
+                "add-heading": "Add a new User to the phonebook",
+                "edit-heading": "Edit User Information",
+                "delete-heading": "Delete User",
+                "delete-question": "Are you sure you want to delete this User?"
+        },
+        "error": {
+                "1": "We have some issues with adding new user! Go back and please try again!",
+                "2": "We have some issues with updating current user! Go back and please try again!",
+                "3": "We have some issues with deleting current user! Go back and please try again!",
+                "4": "There is no such user here! <br> Go back and try a new search!"
+        },
+        "table": {
+                "id": "ID",
+                "firstname": "First Name",
+                "lastname": "Last Name",
+                "email": "Email",
+                "phone": "Phone"
+        },
+        "menu": {
+                "home": "Home",
+                "add" : "Add",
+                "update" : "Update",
+                "delete" : "Delete"
+        }
+}

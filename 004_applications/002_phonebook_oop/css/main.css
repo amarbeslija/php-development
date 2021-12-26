@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #eee;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.navigation{
+    position: absolute;
+    width: 100%;
+}
+
+.navigation ul{
+    width: 100%;
+    margin: 0!important;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li{
+    display: inline-block;
+    padding: 5px 25px;
+    
+}
+
+.phonebook-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonebook-container .phonebook-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,0.4);
+    padding: 20px;
+}
+
+.phonebook-container .phonebook-content .phonebook-add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phonebook-container .phonebook-content .phonebook-add *{
+    margin: 10px 0!important;
+    display: inline-block;
+}
+
+.phonebook-container .phonebook-content form input[type="text"]{
+    padding: 15px;
+    display: inline-block;
+    min-width: 200px;
+    margin: 0;
+}
+
+
+.phonebook-container .phonebook-content td{
+    padding: 10px 20px;
+}
+
+.phonebook-container .phonebook-content a, .phonebook-container .phonebook-content form input[type="submit"], .navigation ul li a{
+    background-color: #eee;
+    padding: 5px 20px;
+    color: #1b951a;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+.phonebook-container .phonebook-content a:hover, .phonebook-container .phonebook-content form input[type="submit"]:hover, .navigation ul li a:hover{
+    text-decoration: none;
+    background: #222;
+    color: #FFF;
+}
