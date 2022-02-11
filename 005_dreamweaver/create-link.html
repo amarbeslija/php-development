@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dashboard</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper-internal create-link-page">
+		<header>
+			<a href="dashboard.html">
+				<img class="nav-logo" src="https://adminlab387.b-cdn.net/dist/images/logos/logo.png" alt="Application Logo">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Početna stranica</a></li>
+					<li><a href="profile.html">Profil</a></li>
+					<li><a class="text-red" href="activation.html">Activate your account!</a></li>
+					<li><a href="logout.html">Logout</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main-container">
+			<aside>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="create-link.html">Create link</a></li>
+					<li><a href="archives.html">Archives</a></li>
+					<li><a href="examples.html">Examples</a></li>
+					<li><a href="insights.html">Insights</a></li>
+					<li><a href="settings.html">Settings</a></li>
+					<li><a href="domains.html">Domains</a></li>
+					<li><a href="logout.html">Logout</a></li>
+				</ul>
+			</aside>
+			<main>
+				<h1>Create new link</h1>
+				<div class="container">
+					<form action="#" method="POST" class="m50">
+						<input class="input" type="text" name="link-name" placeholder="Enter link name:" required>
+						<br>
+						<input class="input" type="text" name="link-url" placeholder="Enter original link:">
+						<br>
+						<select name="link-domain" class="input">
+							<option value="shorty.ba">shorty.ba</option>
+							<option value="000.ba">000.ba</option>
+						</select>
+						<br>
+						<input class="input" type="text" name="link-custom" placeholder="Enable custom text:" disabled>
+						<br>
+						<div class="row">
+							<div class="left">
+								<input type="checkbox" name="link-custom-enable" required>
+								<span><strong>Enable custom text</strong></span>
+							</div>
+							<div class="right">
+								<input class="button button-horizontal" type="submit" value="Create new link">
+							</div>
+						</div>
+					</form>
+				</div>
+			</main>
+		</div>
+		<footer>
+			<a href="dashboard.html">Copyright &copy; ITAcademy 2022</a>
+			<ul>
+				<li><a href="index.html">Početna stranica</a></li>
+				<li><a href="profile.html">Profil</a></li>
+				<li><a class="text-red" href="activation.html">Activate your account!</a></li>
+				<li><a href="logout.html">Logout</a></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>

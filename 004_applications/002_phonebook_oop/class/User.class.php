@@ -10,16 +10,17 @@
 class User{
 
     private $database;
-
+    private $table;
 
     public function __construct(){
         $this->database = new Database();
+        $this->table = "user";
 
     }
 
     
     public function get_all(){
-        $data_from_db = $this->database->select("user", "*")->output();
+        $data_from_db = $this->database->select($this->table, "*")->output();
         return $data_from_db;
     }
 
@@ -28,7 +29,7 @@ class User{
         $user_id = Security::escape($user_id);
         $user_id = Security::clean($user_id);
 
-        $data_from_db = $this->database->select("user", "*", "id", $user_id)->output();
+        $data_from_db = $this->database->select($this->table, "*", "id", $user_id)->output();
         return $data_from_db;
     }
 
@@ -46,7 +47,7 @@ class User{
         $phone = Security::clean($phone);
 
         $data = array($firstname, $lastname, $email, $phone);
-        $executed = $this->database->insert("user", $columns, $data);
+        $executed = $this->database->insert($this->table, $columns, $data);
        
         return $executed;
     }
@@ -67,7 +68,7 @@ class User{
 
         $columns = array("firstname", "lastname", "email", "phone");
         $data = array($firstname, $lastname, $email, $phone);
-        $executed = $this->database->update("user", $columns, $data, "id", $id);
+        $executed = $this->database->update($this->table, $columns, $data, "id", $id);
        
         return $executed;
     }
@@ -77,7 +78,7 @@ class User{
         $id = Security::escape($id);
         $id = Security::clean($id);
 
-        $executed = $this->database->delete("user", "id", $id);
+        $executed = $this->database->delete($this->table, "id", $id);
        
         return $executed;
     }
@@ -90,7 +91,7 @@ class User{
 
         $columns = array("firstname", "lastname", "email", "phone");
         $values = array($data, $data, $data, $data);
-        $executed = $this->database->like("user", "*", $columns, $values, "OR")->output();
+        $executed = $this->database->like($this->table, "*", $columns, $values, "OR")->output();
 
         return $executed;
     }

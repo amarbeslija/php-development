@@ -9,3 +9,6 @@ if (isset($_GET['page'])){
 }else{
     $router->load('index');
 }
+
+// index.php?page=delete
+// index.php?page=update
